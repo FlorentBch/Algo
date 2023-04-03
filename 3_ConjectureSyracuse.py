@@ -26,8 +26,8 @@ Nombre = int(input("Entrez votre nombre : "))
 Save = Nombre
 i =0
 
-while Nombre !=1 :
-    if Nombre%2 ==0:
+while Nombre !=1 ==0:
+    if Nombre%2:
         Nombre/=2
         i+=1
     else:
@@ -37,5 +37,5 @@ while Nombre !=1 :
 
 print("Nombre de base : ",Save)
 print("Nombre d'itération pour arriver à 1 : ",i)
-print("Vérification du nombre de départ : ",Nombre)
+print("Vérification du calcul sur le nombre de départ : ",Nombre)
 

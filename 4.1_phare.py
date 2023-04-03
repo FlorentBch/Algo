@@ -33,7 +33,7 @@ NombreMarche = int(input("Combien de marche contient le phare ?"))
 MesureMarche = int(input("Très bien ! Maintenant combien de centimètre font les marches ?"))
 
 DistanceParcourue = CalculDistance(NombreMarche,MesureMarche)
-print("Cela représente ",CalculParSemaine(NombreMarche,MesureMarche),"en km et par semaine")
+print("Cela représente ",CalculParSemaine(NombreMarche,MesureMarche),"en km et par semaine soit",DistanceParcourue," métres par jours")
 
 # for i in range (NombreMarche):
 #     for j in range (MesureMarche):
