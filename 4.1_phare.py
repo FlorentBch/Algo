@@ -41,7 +41,10 @@ print("Cela représente ",CalculParSemaine(NombreMarche,MesureMarche),"en km et 
 #         cpt+=1
 #         if cpt==NombreMarche:
 #             break
-Nbr = int(NombreMarche//MesureMarche)
-for i in range (Nbr):
+
+while cpt<NombreMarche:
     for j in range (MesureMarche):
+        if(cpt>=NombreMarche):
+            break
         print(((MesureMarche-j)-1)*" ","*")
+        cpt+=1
