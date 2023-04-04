@@ -25,12 +25,12 @@ liste = list()
 liste.append(0)
 liste.append(1)
    
-def fibonacci(liste):
+def fibonacci():
     
-    while 1:
         un = liste[len(liste)-1] + liste[len(liste)-2]
         liste.append(un)
         print(un,"\n")
-        fibonacci(liste)
+        if(len(liste)<100):
+            fibonacci()
         
-fibonacci(liste)
+fibonacci()
