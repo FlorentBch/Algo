@@ -25,17 +25,38 @@ import random
 arr = []
 elem = 42    # element a trouver dans le tableau
 
+
 # remplissage du tableau avec 500 valeurs aléatoires comprisent entre 0 et 1000
 for i in range(500):
     arr.append(random.randrange(0, 1000))
 
 # fonction de tri de python
 arr.sort()
-
+trouve = False
 # Fonction de recherche binaire, elle prend en paramètre l'élément a trouver,
 # le tableau dans lequel chercher, et les indice du début et de la fin du tableau.
 
-# def binarySearch():
-# TODO
-# 
-# 
+def binarySearch (find, tbl, start, end):
+    trouve = False
+    if tbl[len(tbl)//2] == find:
+        print("bravo")
+        trouve = True
+    elif tbl[len(tbl)//2] > find:
+        start = 0
+        end = len(tbl)//2
+        for i in range (len(tbl)//2):
+            del tbl[end]
+    else:
+        start = len(tbl)//2
+        end = len(tbl)
+        for i in range (len(tbl)//2):
+            del tbl[0]
+     
+    if (len(tbl)==1):
+        print("Aucun élément trouvé dans le tableau")    
+    elif trouve == False :
+        binarySearch(find,tbl,start,end)
+    else :
+        print("42, j'en était sûr !")
+
+binarySearch(elem, arr, 0,len(arr))

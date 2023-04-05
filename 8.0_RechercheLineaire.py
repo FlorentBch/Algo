@@ -16,3 +16,12 @@ for i in range(500):
 
 # élément a trouver
 elem = 42
+cpt = 0
+
+for i in range (len(arr)):
+    cpt+=1
+    if arr[i] == elem:
+        print(elem," a été trouvé à l'index: ",i,"!")
+        break
+if cpt == len(arr):
+    print("Lélément n'a pas été trouvé :(")
