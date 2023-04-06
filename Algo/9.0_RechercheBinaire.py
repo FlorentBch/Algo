@@ -39,7 +39,6 @@ trouve = False
 def binarySearch (find, tbl, start, end):
     trouve = False
     if tbl[len(tbl)//2] == find:
-        print("bravo")
         trouve = True
     elif tbl[len(tbl)//2] > find:
         start = 0
