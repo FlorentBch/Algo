@@ -1,7 +1,11 @@
-from Rectangle import *
+'''
+    fichier permettant l'instance de la classe Rectangle
+'''
 
-longueur = int(input("Entrez votre longueur"))
-largeur = int(input("Entrez votre largeur"))
+from Rectangle import Rectangle
 
-rectangle = Rectangle(longueur,largeur)
-print(rectangle.surface())
+try :
+    rectangle = Rectangle(5,10)
+    print(rectangle)
+except TypeError as e:
+    print(e)
